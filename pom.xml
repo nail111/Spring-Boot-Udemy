@@ -29,6 +29,14 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>2.3.1.RELEASE</version>
         </dependency>
+
+        <!--ADD SUPPORT FOR SPRING BOOT SECURITY -->
+        <!-- default Username is: user -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>2.3.2.RELEASE</version>
+        </dependency>
     </dependencies>
 
 </project>
