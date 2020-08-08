@@ -1,11 +1,9 @@
-package Step1;
+package Step3_Security;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.time.LocalDateTime;
 
 @SpringBootApplication
 public class Application {
@@ -14,11 +12,13 @@ public class Application {
     }
 }
 
-
 @RestController
-class SayHello {
-    @GetMapping("/")
-    public String SHello() {
-        return "Hello World  " + LocalDateTime.now();
+class Demo {
+
+    // default Username is: user
+
+    @RequestMapping("/404")
+    public int found() {
+        return 404;
     }
 }
