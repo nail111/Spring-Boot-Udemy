@@ -2,6 +2,7 @@ package Step5_AppProperties;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,7 @@ public class Application {
 
 
 @RestController
+@PropertySource("Step5.properties")
 class SayHello {
     // Full application properties: https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#core-properties
     // Now I have to use localhost:8080/mycoolapp/Hello

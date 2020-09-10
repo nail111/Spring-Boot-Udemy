@@ -2,6 +2,7 @@ package Step3_Security;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ public class Application {
 }
 
 @RestController
+@PropertySource("Step3.properties")
 class Demo {
 
     // default Username is: user
